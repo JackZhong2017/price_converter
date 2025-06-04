@@ -129,6 +129,7 @@
                 <p>新活动满减次数：${Math.floor(z / newFull)}次</p>
                 <p>新到手价：¥${(z - Math.floor(z / newFull) * newReduce).toFixed(2)}</p>
             `;
+        }
 
         function copyToClipboard(value) {
             navigator.clipboard.writeText(value.toString()).then(() => {
@@ -139,7 +140,6 @@
                     notice.textContent = '';
                 }, 2000);
             });
-        }
         }
     </script>
 </body>
